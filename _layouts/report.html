@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="report">
+  <h1>{{ page.title | default: page.topic_display }}</h1>
+  <div class="meta">
+    {% if page.type == "daily" %}
+      <p>Daily · {{ page.date }}{% if page.persona %} · {{ page.persona }}{% endif %}{% if page.theme %} · {{ page.theme }}{% endif %}</p>
+    {% elsif page.type == "weekly" %}
+      <p>Weekly · Week of {{ page.week_start }}{% if page.week_end %} – {{ page.week_end }}{% endif %}</p>
+    {% endif %}
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+</article>
