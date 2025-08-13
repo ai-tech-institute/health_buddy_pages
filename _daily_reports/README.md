@@ -1,1 +1,0 @@
-folder for daily summaries
