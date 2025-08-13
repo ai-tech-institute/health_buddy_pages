@@ -1,0 +1,5 @@
+.hero { text-align:center; padding:3rem 1rem; background:#f6f8fa; border-radius:8px; }
+.cta-button { display:inline-block; padding:.75rem 1.25rem; background:#0366d6; color:#fff; border-radius:6px; text-decoration:none; }
+.benefits, .steps, .research-timeline { display:grid; gap:.75rem; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); margin:1rem 0; }
+.benefit-card, .step, .timeline-item { background:#fff; border:1px solid #e1e4e8; border-radius:6px; padding:.75rem; }
+.final-cta { text-align:center; padding:2rem 1rem; }
