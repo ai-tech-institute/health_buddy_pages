@@ -8,8 +8,11 @@ layout: default
   <ul>
     {% assign summaries = site.weekly_summaries | where: "topic_slug", page.topic_slug | sort: "week_start" | reverse %}
     {% for s in summaries %}
-      <li><a href="{{ s.url }}">{{ s.week_start }}</a></li>
+      <li><a href="{{ s.url | relative_url }}">{{ s.week_start }}</a></li>
     {% endfor %}
+    {% if summaries == empty %}
+      <li><em>No weekly summaries yet.</em></li>
+    {% endif %}
   </ul>
 
   <h2>Daily Reports</h2>
@@ -17,9 +20,12 @@ layout: default
     {% assign reports = site.daily_reports | where: "topic_slug", page.topic_slug | sort: "date" | reverse %}
     {% for r in reports %}
       <li>
-        <a href="{{ r.url }}">{{ r.date }}</a>
+        <a href="{{ r.url | relative_url }}">{{ r.date }}</a>
         {% if r.persona %} — {{ r.persona }}{% endif %}{% if r.theme %} — {{ r.theme }}{% endif %}
       </li>
     {% endfor %}
+    {% if reports == empty %}
+      <li><em>No daily reports yet.</em></li>
+    {% endif %}
   </ul>
 </section>
