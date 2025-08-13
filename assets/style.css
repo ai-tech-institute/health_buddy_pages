@@ -1,5 +1,7 @@
-.hero { text-align:center; padding:3rem 1rem; background:#f6f8fa; border-radius:8px; }
+.hero { text-align:center; padding:3rem 1rem; background:#f6f8fa; border-radius:8px; margin-bottom:1.5rem; }
 .cta-button { display:inline-block; padding:.75rem 1.25rem; background:#0366d6; color:#fff; border-radius:6px; text-decoration:none; }
-.benefits, .steps, .research-timeline { display:grid; gap:.75rem; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); margin:1rem 0; }
-.benefit-card, .step, .timeline-item { background:#fff; border:1px solid #e1e4e8; border-radius:6px; padding:.75rem; }
+.benefits, .steps { display:grid; gap:.75rem; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); margin:1rem 0; }
+.benefit-card, .step { background:#fff; border:1px solid #e1e4e8; border-radius:6px; padding:.75rem; }
+.topics .topic-list { list-style:none; padding-left:0; display:grid; gap:.5rem; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); }
+.topics .topic-list a { display:block; padding:.6rem .8rem; border:1px solid #e1e4e8; border-radius:6px; text-decoration:none; }
 .final-cta { text-align:center; padding:2rem 1rem; }
