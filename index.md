@@ -26,15 +26,13 @@ title: Health Buddy — AI-Powered Health Insights
   </div>
 </section>
 
-<section class="ai-research">
-  <h2>AI Agents Research for You</h2>
-  <div class="research-timeline">
-    <div class="timeline-item"><span class="timeline-number">1</span> Dig — AI searches journals, trials daily.</div>
-    <div class="timeline-item"><span class="timeline-number">2</span> Highlight — Filters key breakthroughs.</div>
-    <div class="timeline-item"><span class="timeline-number">3</span> Refine — Ensures accuracy iteratively.</div>
-    <div class="timeline-item"><span class="timeline-number">4</span> Daily Insights — Simplified reports.</div>
-    <div class="timeline-item"><span class="timeline-number">5</span> Wrap Up — Weekly summary for you.</div>
-  </div>
+<section class="topics">
+  <h2>Topics</h2>
+  <ul class="topic-list">
+    {% for t in site.data.topics.topics %}
+      <li><a href="{{ '/topics/' | append: t.slug | append: '/' | relative_url }}">{{ t.display }}</a></li>
+    {% endfor %}
+  </ul>
 </section>
 
 <section class="final-cta">
