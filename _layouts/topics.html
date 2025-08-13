@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<section class="topic">
+  <h1>{{ page.topic_display }}</h1>
+
+  <h2>Weekly Summaries</h2>
+  <ul>
+    {% assign summaries = site.weekly_summaries | where: "topic_slug", page.topic_slug | sort: "week_start" | reverse %}
+    {% for s in summaries %}
+      <li><a href="{{ s.url }}">{{ s.week_start }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h2>Daily Reports</h2>
+  <ul>
+    {% assign reports = site.daily_reports | where: "topic_slug", page.topic_slug | sort: "date" | reverse %}
+    {% for r in reports %}
+      <li>
+        <a href="{{ r.url }}">{{ r.date }}</a>
+        {% if r.persona %} — {{ r.persona }}{% endif %}{% if r.theme %} — {{ r.theme }}{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
