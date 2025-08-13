@@ -1,0 +1,8 @@
+url: https://ai-tech-institute.github.io
+baseurl: /health_buddy_pages
+title: Health Buddy Research Summaries
+collections:
+  daily_reports:
+    output: true
+  weekly_summaries:
+    output: true
