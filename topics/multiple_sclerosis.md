@@ -1,7 +1,9 @@
 ---
 layout: topic
-title: Multiple Sclerosis
+title: "Multiple Sclerosis"
 topic_slug: multiple_sclerosis
-topic_display: Multiple Sclerosis
+topic_display: "Multiple Sclerosis"
 permalink: /topics/multiple_sclerosis/
 ---
+
+
