@@ -16,6 +16,34 @@ title: Health Buddy — AI-Powered Health Insights
   </div>
 </section>
 
+<section class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Why Health Buddy</h2>
+    <ul class="list-group list-group-flush fs-5 benefits-list">
+      <li class="list-group-item d-flex align-items-start">
+        <span class="badge bg-success rounded-pill me-3">1</span>
+        <div><strong>Dig</strong> — AI searches journals and clinical trials daily.</div>
+      </li>
+      <li class="list-group-item d-flex align-items-start">
+        <span class="badge bg-success rounded-pill me-3">2</span>
+        <div><strong>Highlight</strong> — Filters key breakthroughs.</div>
+      </li>
+      <li class="list-group-item d-flex align-items-start">
+        <span class="badge bg-success rounded-pill me-3">3</span>
+        <div><strong>Refine</strong> — Ensures accuracy iteratively.</div>
+      </li>
+      <li class="list-group-item d-flex align-items-start">
+        <span class="badge bg-success rounded-pill me-3">4</span>
+        <div><strong>Daily Insights</strong> — Clear, simplified reports.</div>
+      </li>
+      <li class="list-group-item d-flex align-items-start">
+        <span class="badge bg-success rounded-pill me-3">5</span>
+        <div><strong>Wrap Up</strong> — Weekly summary tailored for you.</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
 <section class="py-5 bg-light">
   <div class="container">
     <h2 class="mb-4">Topics</h2>
