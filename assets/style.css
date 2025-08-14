@@ -1,5 +1,11 @@
 .hero .display-5 { line-height: 1.2; }
 .card-title a { color: inherit; }
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .cta-button { display:inline-block; padding:.75rem 1.25rem; background:#0366d6; color:#fff; border-radius:6px; text-decoration:none; }
 .benefits, .steps { display:grid; gap:.75rem; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); margin:1rem 0; }
 .benefit-card, .step { background:#fff; border:1px solid #e1e4e8; border-radius:6px; padding:.75rem; }
