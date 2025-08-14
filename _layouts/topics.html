@@ -10,22 +10,15 @@ layout: default
     {% for s in summaries %}
       <li><a href="{{ s.url | relative_url }}">{{ s.week_start }}</a></li>
     {% endfor %}
-    {% if summaries == empty %}
-      <li><em>No weekly summaries yet.</em></li>
-    {% endif %}
+    {% if summaries == empty %}<li><em>No weekly summaries yet.</em></li>{% endif %}
   </ul>
 
   <h2>Daily Reports</h2>
   <ul>
     {% assign reports = site.daily_reports | where: "topic_slug", page.topic_slug | sort: "date" | reverse %}
     {% for r in reports %}
-      <li>
-        <a href="{{ r.url | relative_url }}">{{ r.date }}</a>
-        {% if r.persona %} — {{ r.persona }}{% endif %}{% if r.theme %} — {{ r.theme }}{% endif %}
-      </li>
+      <li><a href="{{ r.url | relative_url }}">{{ r.date | date: '%Y-%m-%d' }}</a>{% if r.persona %} — {{ r.persona | replace: '_', ' ' | downcase | replace: 'primary caretaker','Primary Caretaker' | replace: 'informed patient','Informed Patient' | replace: 'newly diagnosed','Newly Diagnosed' }}{% endif %}{% if r.theme %} — {{ r.theme }}{% endif %}</li>
     {% endfor %}
-    {% if reports == empty %}
-      <li><em>No daily reports yet.</em></li>
-    {% endif %}
+    {% if reports == empty %}<li><em>No daily reports yet.</em></li>{% endif %}
   </ul>
 </section>
