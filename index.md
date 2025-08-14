@@ -9,7 +9,7 @@ title: Health Buddy — AI-Powered Health Insights
 <section class="py-5 bg-light text-center hero">
   <div class="container">
     <h1 class="display-5 fw-bold">Generate more insights with a trusted health research companion</h1>
-    <p class="lead mt-3">Weekly summaries and daily updates, curated by AI for patients, caregivers, and professionals.</p>
+    <p class="lead mt-3">Weekly summaries and daily updates, curated by AI for patients, caregivers, and professionals. Let Health Buddy do the research for YOU!</p>
     <div class="mt-4">
       <a href="{{ '/subscribe' | relative_url }}" class="btn btn-primary btn-lg px-4">Subscribe — 100% Free</a>
     </div>
