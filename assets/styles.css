@@ -49,3 +49,6 @@
 @media (min-width: 600px) {
   .site-nav .trigger { margin-left: auto; }
 }
+
+.benefits-list .list-group-item { background: transparent; border: 0; padding-left: 0; }
+.benefits-list .badge { font-size: .85rem; }
