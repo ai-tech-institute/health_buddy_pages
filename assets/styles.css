@@ -50,7 +50,7 @@
   .site-nav .trigger { margin-left: auto; }
 }
 
-/* Feature icons (Start Bootstrap style) */
+/* Feature icons (Start Bootstrap-like) */
 .feature-icons .feature-icon {
   color: #0d6efd;
   background: #e7f1ff;
@@ -59,7 +59,5 @@
   display: grid; place-items: center;
 }
 .feature-icons svg { color: #0d6efd; }
-
-/* Spacing tweaks to match the reference */
 .feature-icons .h4 { margin-bottom: .25rem; }
 .feature-icons p { margin: 0; }
