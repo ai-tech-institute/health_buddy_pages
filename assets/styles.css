@@ -61,3 +61,7 @@
 .feature-icons svg { color: #0d6efd; }
 .feature-icons .h4 { margin-bottom: .25rem; }
 .feature-icons p { margin: 0; }
+
+/* for Recent Daily Reports section */
+.link-icon { width: 1rem; height: 1rem; color: #0d6efd; }
+.card-title a { color: inherit; }
