@@ -11,8 +11,9 @@ title: Health Buddy — AI-Powered Health Insights
     <h1 class="display-5 fw-bold">Generate more insights with a trusted health research companion</h1>
     <p class="lead mt-3">Weekly summaries and daily updates, curated by AI for patients, caregivers, and professionals. Let Health Buddy do the research for YOU!</p>
     <div class="mt-4">
-      <a href="{{ '/subscribe' | relative_url }}" class="btn btn-primary btn-lg px-4">Subscribe — 100% Free</a>
+      <a href="{{ '/subscribe' | relative_url }}" class="btn btn-primary btn-lg px-4">Subscribe —  No Credit Card, No Password Required</a>
     </div>
+    <p class="lead mt-3">Why free? This complimentary service is provided by the Fairfield AI & Tech Institute whose motto is "AI for the Greater Good."! Read more about the institute here. </p>
   </div>
 </section>
 
@@ -85,6 +86,19 @@ title: Health Buddy — AI-Powered Health Insights
         </div>
         <h3 class="h4 fw-bold">Wrap Up</h3>
         <p class="text-muted mb-0">Weekly summary tailored for you.</p>
+      </div>
+
+      <!-- 6. Personalized Guidance -->
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-icon mx-auto mb-3" aria-hidden="true">
+          <!-- user icon -->
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="12" cy="7" r="4"></circle>
+            <path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path>
+          </svg>
+        </div>
+        <h3 class="h4 fw-bold">Personalized Guidance</h3>
+        <p class="text-muted mb-0">Explains hard‑to‑understand terms in plain language and tailors insights to you.</p>
       </div>
     </div>
   </div>
