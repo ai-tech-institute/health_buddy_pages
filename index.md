@@ -14,7 +14,7 @@ title: Health Buddy — AI-Powered Health Insights
       <a href="{{ '/subscribe' | relative_url }}" class="btn btn-primary btn-lg px-4">Subscribe — 100% FREE!</a>
     </div>
     <p class="lead mt-3"> No Credit Card, No Password Required! </p>
-    <p class="lead mt-3"> Why free? This complimentary service is provided by the Fairfield AI & Tech Institute whose motto is "AI for the Greater Good."! Read more about the institute here. </p>
+    <p class="lead mt-3"> Why free? This complimentary service is provided by the Fairfield AI & Tech Institute whose motto is "AI for the Greater Good"! Read more about the institute here. </p>
   </div>
 </section>
 
@@ -99,7 +99,7 @@ title: Health Buddy — AI-Powered Health Insights
           </svg>
         </div>
         <h3 class="h4 fw-bold">Personalized Guidance</h3>
-        <p class="text-muted mb-0">Explains hard‑to‑understand terms in plain language and tailors insights to you.</p>
+        <p class="text-muted mb-0">Tailors hard-to-find insights to you.</p>
       </div>
     </div>
   </div>
