@@ -16,31 +16,50 @@ title: Health Buddy — AI-Powered Health Insights
   </div>
 </section>
 
-<section class="py-5">
+<section class="py-5 bg-light">
   <div class="container">
-    <h2 class="mb-4">Why Health Buddy</h2>
-    <ul class="list-group list-group-flush fs-5 benefits-list">
-      <li class="list-group-item d-flex align-items-start">
-        <span class="badge bg-success rounded-pill me-3">1</span>
-        <div><strong>Dig</strong> — AI searches journals and clinical trials daily.</div>
-      </li>
-      <li class="list-group-item d-flex align-items-start">
-        <span class="badge bg-success rounded-pill me-3">2</span>
-        <div><strong>Highlight</strong> — Filters key breakthroughs.</div>
-      </li>
-      <li class="list-group-item d-flex align-items-start">
-        <span class="badge bg-success rounded-pill me-3">3</span>
-        <div><strong>Refine</strong> — Ensures accuracy iteratively.</div>
-      </li>
-      <li class="list-group-item d-flex align-items-start">
-        <span class="badge bg-success rounded-pill me-3">4</span>
-        <div><strong>Daily Insights</strong> — Clear, simplified reports.</div>
-      </li>
-      <li class="list-group-item d-flex align-items-start">
-        <span class="badge bg-success rounded-pill me-3">5</span>
-        <div><strong>Wrap Up</strong> — Weekly summary tailored for you.</div>
-      </li>
-    </ul>
+    <div class="row g-5 text-center align-items-start feature-icons">
+      <div class="col-md-4">
+        <div class="feature-icon mx-auto mb-3" aria-hidden="true">
+          <!-- window icon -->
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect>
+            <line x1="3" y1="8" x2="21" y2="8"></line>
+            <circle cx="6" cy="6" r="0.8"></circle>
+            <circle cx="9" cy="6" r="0.8"></circle>
+            <circle cx="12" cy="6" r="0.8"></circle>
+          </svg>
+        </div>
+        <h3 class="h4 fw-bold">Fully Responsive</h3>
+        <p class="text-muted mb-0">Looks great on any device, large or small.</p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-icon mx-auto mb-3" aria-hidden="true">
+          <!-- layers icon -->
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <polygon points="12 2 22 8 12 14 2 8 12 2"></polygon>
+            <polyline points="2 12 12 18 22 12"></polyline>
+            <polyline points="2 16 12 22 22 16"></polyline>
+          </svg>
+        </div>
+        <h3 class="h4 fw-bold">Bootstrap 5 Ready</h3>
+        <p class="text-muted mb-0">Uses the latest Bootstrap utilities and grid.</p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-icon mx-auto mb-3" aria-hidden="true">
+          <!-- terminal icon -->
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <polyline points="4 7 9 12 4 17"></polyline>
+            <line x1="11" y1="17" x2="20" y2="17"></line>
+            <rect x="2.5" y="4.5" width="19" height="15" rx="2"></rect>
+          </svg>
+        </div>
+        <h3 class="h4 fw-bold">Easy to Use</h3>
+        <p class="text-muted mb-0">Drop in your content; publishing is automated.</p>
+      </div>
+    </div>
   </div>
 </section>
 
