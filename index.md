@@ -131,17 +131,21 @@ title: Health Buddy — AI-Powered Health Insights
       {% assign recent = site.daily_reports | sort: 'date' | reverse | slice: 0, 6 %}
       {% for r in recent %}
       {% assign persona_clean = r.persona | default: '' | replace: '_', ' ' | capitalize %}
-      {% assign preview = r.content | strip_html | strip_newlines | truncate: 180 %}
       <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
             <h3 class="card-title h6 mb-2">
-              <a class="stretched-link text-decoration-none" href="{{ r.url | relative_url }}">{{ r.topic_display }}</a>
+              <a class="text-decoration-none d-inline-flex align-items-center" href="{{ r.url | relative_url }}">
+                <svg class="link-icon me-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 1 0-7l1-1a5 5 0 0 1 7 7l-1 1"></path>
+                  <path d="M14 11a5 5 0 0 1 0 7l-1 1a5 5 0 0 1-7-7l1-1"></path>
+                </svg>
+                {{ r.topic_display }}
+              </a>
             </h3>
-            <p class="card-text small mb-2">
+            <p class="card-text small mb-0">
               {{ r.date | date: '%Y-%m-%d' }}{% if persona_clean %} • {{ persona_clean }}{% endif %}{% if r.theme %} • {{ r.theme }}{% endif %}
             </p>
-            <p class="card-text clamp-3">{{ preview }}</p>
           </div>
         </div>
       </div>
