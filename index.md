@@ -19,45 +19,72 @@ title: Health Buddy — AI-Powered Health Insights
 <section class="py-5 bg-light">
   <div class="container">
     <div class="row g-5 text-center align-items-start feature-icons">
-      <div class="col-md-4">
+      <!-- 1. Dig -->
+      <div class="col-md-6 col-lg-4">
         <div class="feature-icon mx-auto mb-3" aria-hidden="true">
-          <!-- window icon -->
+          <!-- search icon -->
           <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect>
-            <line x1="3" y1="8" x2="21" y2="8"></line>
-            <circle cx="6" cy="6" r="0.8"></circle>
-            <circle cx="9" cy="6" r="0.8"></circle>
-            <circle cx="12" cy="6" r="0.8"></circle>
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
         </div>
-        <h3 class="h4 fw-bold">Fully Responsive</h3>
-        <p class="text-muted mb-0">Looks great on any device, large or small.</p>
+        <h3 class="h4 fw-bold">Dig</h3>
+        <p class="text-muted mb-0">AI searches journals and clinical trials daily.</p>
       </div>
 
-      <div class="col-md-4">
+      <!-- 2. Highlight -->
+      <div class="col-md-6 col-lg-4">
         <div class="feature-icon mx-auto mb-3" aria-hidden="true">
-          <!-- layers icon -->
+          <!-- star icon -->
           <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <polygon points="12 2 22 8 12 14 2 8 12 2"></polygon>
-            <polyline points="2 12 12 18 22 12"></polyline>
-            <polyline points="2 16 12 22 22 16"></polyline>
+            <polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.8 5.5 21 7.5 13.5 2 9 9 9 12 2"></polygon>
           </svg>
         </div>
-        <h3 class="h4 fw-bold">Bootstrap 5 Ready</h3>
-        <p class="text-muted mb-0">Uses the latest Bootstrap utilities and grid.</p>
+        <h3 class="h4 fw-bold">Highlight</h3>
+        <p class="text-muted mb-0">Filters key breakthroughs that matter.</p>
       </div>
 
-      <div class="col-md-4">
+      <!-- 3. Refine -->
+      <div class="col-md-6 col-lg-4">
         <div class="feature-icon mx-auto mb-3" aria-hidden="true">
-          <!-- terminal icon -->
+          <!-- shield-check icon -->
           <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <polyline points="4 7 9 12 4 17"></polyline>
-            <line x1="11" y1="17" x2="20" y2="17"></line>
-            <rect x="2.5" y="4.5" width="19" height="15" rx="2"></rect>
+            <path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z"></path>
+            <polyline points="9 12 11 14 15 10"></polyline>
           </svg>
         </div>
-        <h3 class="h4 fw-bold">Easy to Use</h3>
-        <p class="text-muted mb-0">Drop in your content; publishing is automated.</p>
+        <h3 class="h4 fw-bold">Refine</h3>
+        <p class="text-muted mb-0">Ensures accuracy with iterative checks.</p>
+      </div>
+
+      <!-- 4. Daily Insights -->
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-icon mx-auto mb-3" aria-hidden="true">
+          <!-- file-text icon -->
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+        </div>
+        <h3 class="h4 fw-bold">Daily Insights</h3>
+        <p class="text-muted mb-0">Clear, simplified daily reports.</p>
+      </div>
+
+      <!-- 5. Wrap Up -->
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-icon mx-auto mb-3" aria-hidden="true">
+          <!-- calendar icon -->
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+        </div>
+        <h3 class="h4 fw-bold">Wrap Up</h3>
+        <p class="text-muted mb-0">Weekly summary tailored for you.</p>
       </div>
     </div>
   </div>
