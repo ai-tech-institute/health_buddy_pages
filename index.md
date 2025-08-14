@@ -41,7 +41,8 @@ title: Health Buddy — AI-Powered Health Insights
     <div class="row g-4">
       {% assign recent = site.daily_reports | sort: 'date' | reverse | slice: 0, 6 %}
       {% for r in recent %}
-      {% assign persona_clean = r.persona | default: '' | replace: '_', ' ' | downcase | replace: 'primary caretaker','Primary Caretaker' | replace: 'informed patient','Informed Patient' | replace: 'newly diagnosed','Newly Diagnosed' %}
+      {% assign persona_clean = r.persona | default: '' | replace: '_', ' ' | capitalize %}
+      {% assign preview = r.content | strip_html | strip_newlines | truncate: 180 %}
       <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -51,9 +52,7 @@ title: Health Buddy — AI-Powered Health Insights
             <p class="card-text small mb-2">
               {{ r.date | date: '%Y-%m-%d' }}{% if persona_clean %} • {{ persona_clean }}{% endif %}{% if r.theme %} • {{ r.theme }}{% endif %}
             </p>
-            {% if r.excerpt %}
-              <p class="card-text clamp-3">{{ r.excerpt }}</p>
-            {% endif %}
+            <p class="card-text clamp-3">{{ preview }}</p>
           </div>
         </div>
       </div>
