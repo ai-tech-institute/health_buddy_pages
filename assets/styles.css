@@ -1,0 +1,51 @@
+/* Base hero tweak */
+.hero .display-5 { line-height: 1.2; }
+
+/* Force a horizontal header nav everywhere (override Minima + Bootstrap) */
+.site-header .wrapper { display: flex; align-items: center; justify-content: space-between; }
+.site-nav { margin: 0; }
+.site-nav .nav-trigger,
+.site-nav label[for="nav-trigger"] { display: none !important; }
+.site-nav .trigger {
+  display: flex !important;
+  gap: 16px;
+  align-items: center;
+}
+.site-nav .page-link {
+  display: inline-flex !important;
+  padding: 0 .6rem !important;
+  border: 0 !important;
+  background: transparent !important;
+  line-height: 2.2;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Header cosmetics */
+.site-header { border-bottom: 1px solid #eaeaea; }
+.site-header .site-title { font-weight: 600; color: inherit; text-decoration: none; }
+.site-header a { color: inherit; }
+.site-header nav a:hover { text-decoration: underline; }
+
+/* Card typography: avoid huge headings leaking from markdown */
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
+  font-size: 1rem; line-height: 1.4; margin: 0 0 .4rem 0;
+}
+.card .small, .card .card-text { font-size: .95rem; }
+
+/* Clamp long preview text */
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* CTA + footer */
+.cta-button { display:inline-block; padding:.75rem 1.25rem; background:#0366d6; color:#fff; border-radius:6px; text-decoration:none; }
+.final-cta { text-align:center; padding:2rem 1rem; }
+
+/* Responsive tweak: keep nav to the right on wider screens */
+@media (min-width: 600px) {
+  .site-nav .trigger { margin-left: auto; }
+}
