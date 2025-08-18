@@ -2,6 +2,7 @@ title: Health Buddy Research Summaries
 url: https://ai-tech-institute.github.io
 baseurl: /health_buddy_pages
 theme: minima
+subscribe_url: https://forms.gle/Ta9mc5NAsr4sYzsH8
 
 collections:
   daily_reports:
@@ -14,4 +15,3 @@ header_pages:
   - topics.md
   - subscribe.md
 
-subscribe_url: https://forms.gle/Ta9mc5NAsr4sYzsH8
