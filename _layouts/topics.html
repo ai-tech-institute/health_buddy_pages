@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="topic">
+  <h1>{{ page.topic_display }}</h1>
+
+  <h2>Weekly Summaries</h2>
+  <ul>
+    {% assign summaries = site.weekly_summaries | where_exp: "s", "s.topic_slug == page.topic_slug" | sort: "week_start" | reverse %}
+    {% for s in summaries %}
+      <li><a href="{{ s.url | relative_url }}">{{ s.week_start }}</a></li>
+    {% endfor %}
+    {% if summaries == empty %}<li><em>No weekly summaries yet.</em></li>{% endif %}
+  </ul>
+
+  <h2>Daily Reports</h2>
+  <ul>
+    {% assign reports = site.daily_reports | where_exp: "r", "r.topic_slug == page.topic_slug" | sort: "date" | reverse %}
+    {% for r in reports %}
+      <li>
+        <a href="{{ r.url | relative_url }}">{{ r.date | date: '%Y-%m-%d' }}</a>
+        {% if r.persona %} — {{ r.persona | replace: '_',' ' | capitalize }}{% endif %}
+        {% if r.theme %} — {{ r.theme }}{% endif %}
+      </li>
+    {% endfor %}
+    {% if reports == empty %}<li><em>No daily reports yet.</em></li>{% endif %}
+  </ul>
+</section>
