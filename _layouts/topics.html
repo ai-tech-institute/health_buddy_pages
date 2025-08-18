@@ -3,6 +3,12 @@ layout: default
 ---
 <section class="topic">
   <h1>{{ page.topic_display }}</h1>
+  <p class="text-muted small">debug: weekly={{ site.collections["weekly_summaries"].docs | size }}; daily={{ site.collections["daily_reports"].docs | size }}; page.topic_slug={{ page.topic_slug }}</p>
+    <ul class="text-muted small">
+      {% for s in site.collections["weekly_summaries"].docs %}
+        <li>weekly: {{ s.path }} — topic_slug={{ s.topic_slug }} — week_start={{ s.week_start }}</li>
+      {% endfor %}
+    </ul>
 
   <h2>Weekly Summaries</h2>
   <ul>
