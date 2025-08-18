@@ -11,7 +11,7 @@ title: Health Buddy — AI-Powered Health Insights
     <h1 class="display-5 fw-bold">Generate more insights with a trusted health research companion</h1>
     <p class="lead mt-3">Weekly summaries and daily updates, curated by AI for patients, caregivers, and professionals. Let Health Buddy do the research for YOU!</p>
     <div class="mt-4">
-      <a href="{{ '/subscribe' | relative_url }}" class="btn btn-primary btn-lg px-4">Subscribe — 100% FREE!</a>
+      <a href="{{ site.subscribe_url }}" target="_blank" rel="noopener" class="btn btn-primary btn-lg px-4">Subscribe — 100% FREE!</a>
     </div>
     <p class="lead mt-3"> No Credit Card, No Password Required! </p>
     <p class="lead mt-3"> Why free? This complimentary service is provided by the Fairfield AI & Tech Institute whose motto is "AI for the Greater Good"! Read more about the institute here. </p>
@@ -161,6 +161,6 @@ title: Health Buddy — AI-Powered Health Insights
   <div class="container">
     <h2 class="mb-3">Ready to get started?</h2>
     <p class="lead mb-4">Subscribe now to receive free weekly summaries and daily insights.</p>
-    <a href="{{ '/subscribe' | relative_url }}" class="btn btn-light btn-lg px-4">Subscribe</a>
+    <a href="{{ site.subscribe_url }}" target="_blank" rel="noopener" class="btn btn-light btn-lg px-4">Subscribe</a>
   </div>
 </section>
