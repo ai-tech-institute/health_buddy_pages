@@ -65,3 +65,6 @@
 /* for Recent Daily Reports section */
 .link-icon { width: 1rem; height: 1rem; color: #0d6efd; }
 .card-title a { color: inherit; }
+
+/* Footer cosmetics */
+.site-footer { margin-top: 2rem; }
