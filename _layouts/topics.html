@@ -6,24 +6,31 @@ layout: default
 
   <h2>Weekly Summaries</h2>
   <ul>
-    {% assign summaries = site.collections["weekly_summaries"].docs | where_exp: "s", "s.topic_slug == page.topic_slug" | sort: "week_start" | reverse %}
-
-    {% for s in summaries %}
-      <li><a href="{{ s.url | relative_url }}">{{ s.week_start }}</a></li>
+    {% assign all_summaries = site.collections["weekly_summaries"].docs | sort: "week_start" | reverse %}
+    {% assign has_weeklies = false %}
+    {% for s in all_summaries %}
+      {% if s.topic_slug == page.topic_slug %}
+        {% assign has_weeklies = true %}
+        <li><a href="{{ s.url | relative_url }}">{{ s.week_start }}</a></li>
+      {% endif %}
     {% endfor %}
-    {% if summaries == empty %}<li><em>No weekly summaries yet.</em></li>{% endif %}
+    {% unless has_weeklies %}<li><em>No weekly summaries yet.</em></li>{% endunless %}
   </ul>
 
   <h2>Daily Reports</h2>
   <ul>
-    {% assign reports = site.collections["daily_reports"].docs | where_exp: "r", "r.topic_slug == page.topic_slug" | sort: "date" | reverse %}
-    {% for r in reports %}
-      <li>
-        <a href="{{ r.url | relative_url }}">{{ r.date | date: '%Y-%m-%d' }}</a>
-        {% if r.persona %} — {{ r.persona | replace: '_',' ' | capitalize }}{% endif %}
-        {% if r.theme %} — {{ r.theme }}{% endif %}
-      </li>
+    {% assign all_reports = site.collections["daily_reports"].docs | sort: "date" | reverse %}
+    {% assign has_dailies = false %}
+    {% for r in all_reports %}
+      {% if r.topic_slug == page.topic_slug %}
+        {% assign has_dailies = true %}
+        <li>
+          <a href="{{ r.url | relative_url }}">{{ r.date | date: '%Y-%m-%d' }}</a>
+          {% if r.persona %} — {{ r.persona | replace: '_',' ' | capitalize }}{% endif %}
+          {% if r.theme %} — {{ r.theme }}{% endif %}
+        </li>
+      {% endif %}
     {% endfor %}
-    {% if reports == empty %}<li><em>No daily reports yet.</em></li>{% endif %}
+    {% unless has_dailies %}<li><em>No daily reports yet.</em></li>{% endunless %}
   </ul>
 </section>
