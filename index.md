@@ -14,7 +14,7 @@ title: Health Buddy — AI-Powered Health Insights
       <a href="{{ site.subscribe_url }}" target="_blank" rel="noopener" class="btn btn-primary btn-lg px-4">Subscribe — 100% FREE!</a>
     </div>
     <p class="lead mt-3"> No Credit Card, No Password Required! </p>
-    <p class="lead mt-3"> Why free? This complimentary service is provided by the Fairfield AI & Tech Institute whose motto is "AI for the Greater Good"! Read more about the institute here. </p>
+    <p class="lead mt-3"> Why free? This complimentary service is provided by the Fairfield AI & Tech Institute whose motto is "AI for the Greater Good"! Read more about the institute <a href="https://www.fairfield.edu/academics/schools-and-colleges/charles-f-dolan-school-of-business/centers-and-facilities/ai-and-tech-institute/"> here </a>. </p>
   </div>
 </section>
 
