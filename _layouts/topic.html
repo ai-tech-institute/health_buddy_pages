@@ -3,16 +3,14 @@ layout: default
 ---
 <section class="topic">
   <h1>{{ page.topic_display }}</h1>
-  <p class="text-muted small">debug: weekly={{ site.collections["weekly_summaries"].docs | size }}; daily={{ site.collections["daily_reports"].docs | size }}; page.topic_slug={{ page.topic_slug }}</p>
-    <ul class="text-muted small">
-      {% for s in site.collections["weekly_summaries"].docs %}
-        <li>weekly: {{ s.path }} — topic_slug={{ s.topic_slug }} — week_start={{ s.week_start }}</li>
-      {% endfor %}
-    </ul>
 
   <h2>Weekly Summaries</h2>
   <ul>
-    {% assign all_summaries = site.collections["weekly_summaries"].docs | sort: "week_start" | reverse %}
+    {% assign weekly_docs = site.collections["weekly_summaries"].docs %}
+    {% if weekly_docs == nil %}
+      {% assign weekly_docs = site.weekly_summaries %}
+    {% endif %}
+    {% assign all_summaries = weekly_docs | sort: "week_start" | reverse %}
     {% assign has_weeklies = false %}
     {% for s in all_summaries %}
       {% if s.topic_slug == page.topic_slug %}
@@ -25,7 +23,11 @@ layout: default
 
   <h2>Daily Reports</h2>
   <ul>
-    {% assign all_reports = site.collections["daily_reports"].docs | sort: "date" | reverse %}
+    {% assign daily_docs = site.collections["daily_reports"].docs %}
+    {% if daily_docs == nil %}
+      {% assign daily_docs = site.daily_reports %}
+    {% endif %}
+    {% assign all_reports = daily_docs | sort: "date" | reverse %}
     {% assign has_dailies = false %}
     {% for r in all_reports %}
       {% if r.topic_slug == page.topic_slug %}
