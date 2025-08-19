@@ -7,3 +7,5 @@ topics:
     display: "Multiple Myeloma"
   - slug: multiple_sclerosis
     display: "Multiple Sclerosis"
+  - slug: type_2_diabetes
+    display: "Type 2 diabetes"
