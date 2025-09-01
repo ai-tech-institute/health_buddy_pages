@@ -1,11 +1,11 @@
 topics:
   - slug: chronic_migraine
     display: "Chronic Migraine"
-  - slug: long_covid
-    display: "Long COVID"
   - slug: multiple_myeloma
     display: "Multiple Myeloma"
   - slug: multiple_sclerosis
     display: "Multiple Sclerosis"
+  - slug: pancreatic_cancer
+    display: "Pancreatic Cancer"
   - slug: type_2_diabetes
     display: "Type 2 diabetes"
