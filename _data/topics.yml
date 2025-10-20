@@ -1,8 +1,6 @@
 topics:
   - slug: chronic_migraine
     display: "Chronic Migraine"
-  - slug: long_covid
-    display: "Long Covid"
   - slug: multiple_myeloma
     display: "Multiple Myeloma"
   - slug: multiple_sclerosis
